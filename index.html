@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Diskr</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+      .top-buffer {
+        margin-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Form -->
+      <div class="row top-buffer">
+        <div class="col-lg-6 mx-auto">
+        <div class="input-group">
+          <input id="computerName" type="text" class="form-control" placeholder="Computer Name">
+          <span class="input-group-btn">
+            <button id="getDisk" class="btn btn-primary" type="button">Get Disk Info!</button>
+          </span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Output -->
+    <div class="row justify-content-center">
+      <div id="output" class="col-lg-6 mx-auto"></div>
+    </div>
+    
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
